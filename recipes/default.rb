@@ -41,6 +41,7 @@ when "ubuntu"
   end
 when "centos", "redhat"
   yum_repository "treasure-data" do
+    description "Treasure Data Packages Repository"
     url "http://packages.treasure-data.com/redhat/$basearch"
     action :add
   end
